@@ -1,5 +1,5 @@
 <template>
-    <div v-if="title" class="relative max-w-sm rounded-lg shadow-xl px-5">
+    <div v-if="title" class="relative rounded-lg shadow-xl px-5">
         <router-link :to="url" v-if="imageSrc && url">
             <img class="rounded-lg" :src="imageSrc" :alt="title" />
         </router-link>
