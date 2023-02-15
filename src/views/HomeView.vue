@@ -75,6 +75,7 @@
             </div>
         </section>
         <team-list />
+        <contact-form />
     </main>
 </template>
 <script>
@@ -85,6 +86,7 @@ import ServiceCard from '../components/services/ServiceCard.vue'
 import ClientItem from '../components/clients/ClientItem.vue'
 import ProgressItem from '../components/progress/ProgressItem.vue'
 import TeamList from '../components/team/TeamList.vue'
+import ContactForm from '../components/contact/ContactForm.vue'
 import 'swiper/css';
 import 'swiper/css/autoplay'
 import { Swiper, SwiperSlide, } from 'swiper/vue';
@@ -95,7 +97,7 @@ export default {
         MainButton, MainHeading, MainParagraph, ServiceCard, Swiper,
         SwiperSlide,
         ClientItem,
-        ProgressItem, TeamList
+        ProgressItem, TeamList, ContactForm
     },
     setup() {
         const onSwiper = (swiper) => {
