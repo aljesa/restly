@@ -52,7 +52,6 @@ import { useFooterStore } from '../../stores/FooterStore'
 export default {
     setup() {
         const footerStore = useFooterStore();
-        console.log(footerStore.quickLinks);
         return { footerStore }
     }
 }

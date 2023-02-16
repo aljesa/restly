@@ -18,7 +18,6 @@ export const useHomeStore = defineStore('homeStore',{
             {id: 1, step: '01', title: 'Advertising and Marketing', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore', imgSrc: 'src/assets/images/bubble-chat.png', url: 'https://www.microsoft.com/'},
             {id: 2, step: '01', title: 'Web Development', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore', imgSrc: 'src/assets/images/coding.png', url: 'https://www.microsoft.com/'},
             {id: 3, step: '01', title: 'Mobile App Development', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore', imgSrc: 'src/assets/images/app-development.png', url: 'https://www.microsoft.com/'},
-
         ],
         teamMembers: [
             {id: 1, name: 'Rodney J. Sabo', position: 'Design Lead', image: 'src/assets/images/team/team-1.jpg', profile: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate'},
