@@ -39,7 +39,7 @@ export const useFormStore = defineStore('formStore',{
       }
 
       if (!this.message) {
-        this.errors.message = 'Phone number is required'
+        this.errors.message = 'Message is required'
       } else {
         this.errors.message = null
       }

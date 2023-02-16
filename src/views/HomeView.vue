@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="pt-10 mb-10 h-96 pb-28 bg-no-repeat bg-cover bg-center-center bg-[url('../assets/images/hero-three.jpg')] before:absolute before:top-10 before:z-20 before:bg-slate-900 before:opacity-40 before:h-96 before:w-full">
-            <div class="container mx-auto px-4 pt-20 text-white z-50 relative">
+        <div class="relative h-full w-full pt-10 mb-10 pb-28 bg-no-repeat bg-cover bg-top bg-[url('../assets/images/hero/home-hero-5.jpeg')] before:absolute before:top-0 before:z-20 before:bg-black before:opacity-50 before:h-full before:w-full">
+            <div class="container mx-auto px-4 mt-40 text-white z-50 relative">
                 <div class="grid grid-cols-2">
                     <div>
                         <span class="text-lg mb-5 inline-block">EMPOWER YOUR BUSINESS</span>
