@@ -39,7 +39,7 @@
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul class="flex flex-col p-4 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                             <li v-for="(item, index) in headerStore.links" :key="index">
-                                <router-link :to="item.path" class="block px-4 text-white text-lg">{{ item.title }}</router-link>
+                                <router-link :to="item.path" class="block px-4 text-white text-lg transition-colors hover:text-blue-700">{{ item.title }}</router-link>
                             </li>
                         </ul>
                     </div>

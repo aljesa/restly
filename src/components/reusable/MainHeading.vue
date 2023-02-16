@@ -3,7 +3,7 @@
     <h2 v-else-if="type == 'h2'" class="text-4xl font-extrabold">{{ title }}</h2>
     <h3 v-else-if="type == 'h3'" class="text-2xl font-medium">{{ title }}</h3>
     <h4 v-else-if="type == 'h4'" class="text-xl font-extrabold">{{ title }}</h4>
-    <h5 v-else-if="type == 'h5'" :class="headingClasses">{{ title }}</h5>
+    <h5 v-else-if="type == 'h5'" class="text-lg font-extrabold">{{ title }}</h5>
 
 </template>
 <script>

@@ -31,7 +31,7 @@
         </section>
         <section class="py-10 mt-40 bg-blue-800 bg-no-repeat z-10 bg-cover bg-center-center bg-[url('../assets/images/progress.png')]">
             <div class="container mx-auto px-4">
-                <div class="bg-white relative -mt-20 shadow-xl py-10 px-20 rounded-md">
+                <div class="bg-white relative -mt-20 shadow-2xl py-10 px-20 rounded-md border border-gray-400 border-opacity-10">
                     <swiper :slides-per-view="5" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
                         <swiper-slide v-for="(client, index) in homeStore.clients" :key="index">
                             <a :href="client.url" target="_blank" class="inline-block w-full h-7">
@@ -75,7 +75,10 @@
             </div>
         </section>
         <team-list />
+        <news-list />
+        <Newsletter />
         <contact-form />
+
     </main>
 </template>
 <script>
@@ -87,6 +90,9 @@ import ClientItem from '../components/clients/ClientItem.vue'
 import ProgressItem from '../components/progress/ProgressItem.vue'
 import TeamList from '../components/team/TeamList.vue'
 import ContactForm from '../components/contact/ContactForm.vue'
+import NewsList from '../components/news/NewsList.vue'
+import Newsletter from "../components/newsletter/Newsletter.vue"
+
 import 'swiper/css';
 import 'swiper/css/autoplay'
 import { Swiper, SwiperSlide, } from 'swiper/vue';
@@ -94,10 +100,18 @@ import { useHomeStore } from '../stores/HomeStore'
 
 export default {
     components: {
-        MainButton, MainHeading, MainParagraph, ServiceCard, Swiper,
+        MainButton,
+        MainHeading,
+        MainParagraph,
+        ServiceCard,
+        Swiper,
         SwiperSlide,
         ClientItem,
-        ProgressItem, TeamList, ContactForm
+        ProgressItem,
+        TeamList,
+        ContactForm,
+        NewsList,
+        Newsletter
     },
     setup() {
         const onSwiper = (swiper) => {
