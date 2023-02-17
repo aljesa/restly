@@ -23,13 +23,11 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
-                    <service-card imageSrc="src/assets/images/services/web-dev.jpeg" url="/services:id" title="IT Management" category="Web Development" />
-                    <service-card imageSrc="src/assets/images/services/data-analytics.jpeg" url="/services:id" title="Cloud Services" category="Data Analytics" />
-                    <service-card imageSrc="src/assets/images/services/mobile-developers.jpeg" url="/services:id" title="Machine Learning" category="Mobile Development" />
+                    <service-card v-for="(service, index) in servicesStore.services.items" :key="index" :imageSrc="service.imgSrc" :title="service.title" :category="service.category" :url="'/services/' + service.id" />
                 </div>
             </div>
         </section>
-        <section class="py-10 mt-40 bg-blue-800 bg-no-repeat z-10 bg-cover bg-center-center bg-[url('../assets/images/progress.png')]">
+        <section class="py-10 mt-20 bg-blue-800 bg-no-repeat z-10 bg-cover bg-center-center bg-[url('../assets/images/progress.png')]">
             <div class="container mx-auto px-4">
                 <div class="bg-white relative -mt-20 shadow-2xl py-10 px-20 rounded-md border border-gray-400 border-opacity-10">
                     <swiper :slides-per-view="5" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
@@ -97,6 +95,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay'
 import { Swiper, SwiperSlide, } from 'swiper/vue';
 import { useHomeStore } from '../stores/HomeStore'
+import { useServicesStore } from '../stores/ServicesStore'
 
 export default {
     components: {
@@ -121,11 +120,15 @@ export default {
             // console.log('slide change');
         };
         const homeStore = useHomeStore();
+        const servicesStore = useServicesStore();
+        console.log(servicesStore.services.items)
         return {
             onSwiper,
             onSlideChange,
-            homeStore
+            homeStore,
+            servicesStore
         };
+
     },
 
 }

@@ -1,6 +1,6 @@
 <template>
     <div v-if="title" class="relative rounded-lg shadow-xl px-5">
-        <router-link :to="url" v-if="imageSrc && url">
+        <router-link :to="url" v-if="imageSrc">
             <img class="rounded-lg" :src="imageSrc" :alt="title" />
         </router-link>
         <div class="py-5 flex justify-between">
