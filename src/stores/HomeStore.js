@@ -20,11 +20,370 @@ export const useHomeStore = defineStore('homeStore',{
             {id: 3, step: '01', title: 'Mobile App Development', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore', imgSrc: 'src/assets/images/app-development.png', url: 'https://www.microsoft.com/'},
         ],
         teamMembers: [
-            {id: 1, name: 'Rodney J. Sabo', position: 'Design Lead', image: 'src/assets/images/team/team-1.jpg', profile: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate'},
-            {id: 2, name: 'Ebony K. Hedrick', position: 'Design Lead', image: 'src/assets/images/team/team-2.jpg', profile: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate'},
-            {id: 3, name: 'Craig B. Hoffman', position: 'Design Lead', image: 'src/assets/images/team/team-3.jpg', profile: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate'},
-            {id: 4, name: 'Jeff R. Rodriguez', position: 'Design Lead', image: 'src/assets/images/team/team-4.jpg', profile: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate'},
-
+            {
+                id: 1, 
+                name: 'Rodney J. Sabo', 
+                position: 'Design Lead', 
+                image: 'src/assets/images/team/team-1.jpeg', 
+                bio:'Rodney J. Sabo is a Design Lead at Restly. He brings 5 years of experience in UI/UX Design, as well as a passion for design.  At Restly, he is responsible for designing websites, working closely with CEO & Clients to achieve the best result.', 
+                education: [
+                    {
+                        id: 1,
+                        degree: 'Bachelor of Science in Computer Science',
+                        university: 'Massachusetts Institute of Technology (MIT)',
+                        date: '2008-2012'
+                    },
+                    {
+                        id: 2,
+                        degree: 'Master of Business Administration (MBA)',
+                        university: 'Harvard Business School',
+                        date: '2012-2014'
+                    },
+                    {
+                        id: 3,
+                        degree: 'AWS Certified Solutions Architect',
+                        university: 'Associate, Amazon Web Services',
+                        date: '2020'
+                    },
+                    {
+                        id: 4,
+                        degree: 'Project Management Professional (PMP)',
+                        university: 'Project Management Institute',
+                        date: '2019',
+                    },
+                    {
+                        id: 5,
+                        degree: 'Certified Scrum Master (CSM)',
+                        university: 'Scrum Alliance',
+                        date: '2018',
+                    }
+                ],
+                skills: [
+                    {
+                        id: 1,
+                        title: 'Creativity',
+                    },
+                    {
+                        id: 2,
+                        title:'Technical skills',
+                    },
+                    {
+                        id: 3,
+                        title: 'Communication skills',
+                    },
+                    {
+                        id: 4,
+                        title: 'Attention to detail',
+                    },
+                    {
+                        id: 5,
+                        title: 'Time management',
+                    },
+                    {
+                        id: 6,
+                        title: 'Flexibility'
+                    }
+                ],
+                socialMedia: [
+                    {
+                        id: 1,
+                        title: 'Facebook',
+                        socialUrl: 'https://facebook.com',
+                        icon: '/src/assets/images/icons/facebook.png',
+                    },
+                    {
+                        id: 2,
+                        title: 'LinkedIn',
+                        socialUrl: 'https://linkedin.com',
+                        icon: '/src/assets/images/icons/linkedin.png',
+                    },
+                    {
+                        id: 3,
+                        title: 'Instagram',
+                        socialUrl: 'https://instagram.com',
+                        icon: '/src/assets/images/icons/instagram.png',
+                    },
+                    {
+                        id: 1,
+                        title: 'Twitter',
+                        socialUrl: 'https://twitter.com',
+                        icon: '/src/assets/images/icons/twitter.png',
+                    },
+                ]    
+            },
+            {
+                id: 2, 
+                name: 'Ebony K. Hedrick', 
+                position: 'Design Lead', 
+                image: 'src/assets/images/team/team-2.jpeg',
+                bio:'Rodney J. Sabo is a Design Lead at Restly. He brings 5 years of experience in UI/UX Design, as well as a passion for design.  At Restly, he is responsible for designing websites, working closely with CEO & Clients to achieve the best result.', 
+                education: [
+                    {
+                        id: 1,
+                        degree: 'Bachelor of Science in Computer Science',
+                        university: 'Massachusetts Institute of Technology (MIT)',
+                        date: '2008-2012'
+                    },
+                    {
+                        id: 2,
+                        degree: 'Master of Business Administration (MBA)',
+                        university: 'Harvard Business School',
+                        date: '2012-2014'
+                    },
+                    {
+                        id: 3,
+                        degree: 'AWS Certified Solutions Architect',
+                        university: 'Associate, Amazon Web Services',
+                        date: '2020'
+                    },
+                    {
+                        id: 4,
+                        degree: 'Project Management Professional (PMP)',
+                        university: 'Project Management Institute',
+                        date: '2019',
+                    },
+                    {
+                        id: 5,
+                        degree: 'Certified Scrum Master (CSM)',
+                        university: 'Scrum Alliance',
+                        date: '2018',
+                    }
+                ],
+                skills: [
+                    {
+                        id: 1,
+                        title: 'Creativity',
+                    },
+                    {
+                        id: 2,
+                        title:'Technical skills',
+                    },
+                    {
+                        id: 3,
+                        title: 'Communication skills',
+                    },
+                    {
+                        id: 4,
+                        title: 'Attention to detail',
+                    },
+                    {
+                        id: 5,
+                        title: 'Time management',
+                    },
+                    {
+                        id: 6,
+                        title: 'Flexibility'
+                    }
+                ],
+                socialMedia: [
+                    {
+                        id: 1,
+                        title: 'Facebook',
+                        socialUrl: 'https://facebook.com',
+                        icon: '/src/assets/images/icons/facebook.png',
+                    },
+                    {
+                        id: 2,
+                        title: 'LinkedIn',
+                        socialUrl: 'https://linkedin.com',
+                        icon: '/src/assets/images/icons/linkedin.png',
+                    },
+                    {
+                        id: 3,
+                        title: 'Instagram',
+                        socialUrl: 'https://instagram.com',
+                        icon: '/src/assets/images/icons/instagram.png',
+                    },
+                    {
+                        id: 1,
+                        title: 'Twitter',
+                        socialUrl: 'https://twitter.com',
+                        icon: '/src/assets/images/icons/twitter.png',
+                    },
+                ]    
+            },
+            {
+                id: 3, 
+                name: 'Craig B. Hoffman', 
+                position: 'Design Lead', 
+                image: 'src/assets/images/team/team-3.jpeg',
+                bio:'Rodney J. Sabo is a Design Lead at Restly. He brings 5 years of experience in UI/UX Design, as well as a passion for design.  At Restly, he is responsible for designing websites, working closely with CEO & Clients to achieve the best result.', 
+                education: [
+                    {
+                        id: 1,
+                        degree: 'Bachelor of Science in Computer Science',
+                        university: 'Massachusetts Institute of Technology (MIT)',
+                        date: '2008-2012'
+                    },
+                    {
+                        id: 2,
+                        degree: 'Master of Business Administration (MBA)',
+                        university: 'Harvard Business School',
+                        date: '2012-2014'
+                    },
+                    {
+                        id: 3,
+                        degree: 'AWS Certified Solutions Architect',
+                        university: 'Associate, Amazon Web Services',
+                        date: '2020'
+                    },
+                    {
+                        id: 4,
+                        degree: 'Project Management Professional (PMP)',
+                        university: 'Project Management Institute',
+                        date: '2019',
+                    },
+                    {
+                        id: 5,
+                        degree: 'Certified Scrum Master (CSM)',
+                        university: 'Scrum Alliance',
+                        date: '2018',
+                    }
+                ],
+                skills: [
+                    {
+                        id: 1,
+                        title: 'Creativity',
+                    },
+                    {
+                        id: 2,
+                        title:'Technical skills',
+                    },
+                    {
+                        id: 3,
+                        title: 'Communication skills',
+                    },
+                    {
+                        id: 4,
+                        title: 'Attention to detail',
+                    },
+                    {
+                        id: 5,
+                        title: 'Time management',
+                    },
+                    {
+                        id: 6,
+                        title: 'Flexibility'
+                    }
+                ],
+                socialMedia: [
+                    {
+                        id: 1,
+                        title: 'Facebook',
+                        socialUrl: 'https://facebook.com',
+                        icon: '/src/assets/images/icons/facebook.png',
+                    },
+                    {
+                        id: 2,
+                        title: 'LinkedIn',
+                        socialUrl: 'https://linkedin.com',
+                        icon: '/src/assets/images/icons/linkedin.png',
+                    },
+                    {
+                        id: 3,
+                        title: 'Instagram',
+                        socialUrl: 'https://instagram.com',
+                        icon: '/src/assets/images/icons/instagram.png',
+                    },
+                    {
+                        id: 1,
+                        title: 'Twitter',
+                        socialUrl: 'https://twitter.com',
+                        icon: '/src/assets/images/icons/twitter.png',
+                    },
+                ]    
+            },
+            {
+                id: 4, 
+                name: 'Jeff R. Rodriguez', 
+                position: 'Design Lead', 
+                image: 'src/assets/images/team/team-4.jpeg',
+                bio:'Rodney J. Sabo is a Design Lead at Restly. He brings 5 years of experience in UI/UX Design, as well as a passion for design.  At Restly, he is responsible for designing websites, working closely with CEO & Clients to achieve the best result.', 
+                education: [
+                    {
+                        id: 1,
+                        degree: 'Bachelor of Science in Computer Science',
+                        university: 'Massachusetts Institute of Technology (MIT)',
+                        date: '2008-2012'
+                    },
+                    {
+                        id: 2,
+                        degree: 'Master of Business Administration (MBA)',
+                        university: 'Harvard Business School',
+                        date: '2012-2014'
+                    },
+                    {
+                        id: 3,
+                        degree: 'AWS Certified Solutions Architect',
+                        university: 'Associate, Amazon Web Services',
+                        date: '2020'
+                    },
+                    {
+                        id: 4,
+                        degree: 'Project Management Professional (PMP)',
+                        university: 'Project Management Institute',
+                        date: '2019',
+                    },
+                    {
+                        id: 5,
+                        degree: 'Certified Scrum Master (CSM)',
+                        university: 'Scrum Alliance',
+                        date: '2018',
+                    }
+                ],
+                skills: [
+                    {
+                        id: 1,
+                        title: 'Creativity',
+                    },
+                    {
+                        id: 2,
+                        title:'Technical skills',
+                    },
+                    {
+                        id: 3,
+                        title: 'Communication skills',
+                    },
+                    {
+                        id: 4,
+                        title: 'Attention to detail',
+                    },
+                    {
+                        id: 5,
+                        title: 'Time management',
+                    },
+                    {
+                        id: 6,
+                        title: 'Flexibility'
+                    }
+                ],
+                socialMedia: [
+                    {
+                        id: 1,
+                        title: 'Facebook',
+                        socialUrl: 'https://facebook.com',
+                        icon: '/src/assets/images/icons/facebook.png',
+                    },
+                    {
+                        id: 2,
+                        title: 'LinkedIn',
+                        socialUrl: 'https://linkedin.com',
+                        icon: '/src/assets/images/icons/linkedin.png',
+                    },
+                    {
+                        id: 3,
+                        title: 'Instagram',
+                        socialUrl: 'https://instagram.com',
+                        icon: '/src/assets/images/icons/instagram.png',
+                    },
+                    {
+                        id: 1,
+                        title: 'Twitter',
+                        socialUrl: 'https://twitter.com',
+                        icon: '/src/assets/images/icons/twitter.png',
+                    },
+                ]    
+            }
         ]
         
     })

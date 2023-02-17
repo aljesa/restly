@@ -1,7 +1,7 @@
 <template>
     <div class="text-white h-full relative w-full p-12 rounded bg-no-repeat bg-cover bg-center-center bg-[url('src/assets/images/about/about-2.jpeg')] before:absolute before:top-0 before:left-0 before:z-20 before:rounded before:bg-blue-900 before:opacity-80 before:h-full before:w-full">
         <div class="relative z-30">
-            <main-heading title="Don't hesitate to contact us" type="h3" />
+            <main-heading title="Don't hesitate to contact us" tag="h3" />
             <ul class="mt-5 block">
                 <li class="mb-5">
                     <span class="inline-block">Call us</span>

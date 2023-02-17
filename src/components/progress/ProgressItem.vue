@@ -5,7 +5,7 @@
             <img :src="icon" :alt="title" class="absolute -translate-y-2/4 -translate-x-2/4 top-2/4 left-2/4">
         </div>
         <router-link :to="url">
-            <main-heading :title="title" type="h4" />
+            <main-heading :title="title" tag="h4" />
         </router-link>
         <main-paragraph class="text-white mt-5">{{ description }}</main-paragraph>
         <main-button title="Read More" :link="url" />

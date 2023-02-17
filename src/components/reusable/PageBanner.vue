@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4 mt-40 text-white z-50 relative">
             <div class="grid grid-cols-2">
                 <div>
-                    <main-heading :title="title" type="h1" />
+                    <main-heading :title="title" tag="h1" />
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
                     <span class="inline-block text-sm"> {{ date }}</span>
                 </div>
                 <router-link to="/news/id" v-if="title" class="my-2 inline-block">
-                    <main-heading type="h5" :title="title" class="hover:text-blue-600 transition-colors" />
+                    <main-heading tag="h5" :title="title" class="hover:text-blue-600 transition-colors" />
                 </router-link>
                 <main-paragraph>{{ description }}</main-paragraph>
             </div>

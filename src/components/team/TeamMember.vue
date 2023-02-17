@@ -1,11 +1,11 @@
 <template>
     <div class="">
-        <router-link to="/" class="w-full h-96 inline-block">
-            <img :src="image" class="rounded w-full h-full object-cover" />
+        <router-link :to="url" class="w-full h-96 inline-block">
+            <img v-lazy="image" class="rounded w-full h-full object-cover object-center" />
         </router-link>
         <div class="text-center bg-white mx-5 text-slate-500 p-5 rounded -mt-10 z-10 relative">
-            <router-link to="/">
-                <main-heading :title="name" type="h4" />
+            <router-link :to="url">
+                <main-heading :title="name" tag="h4" />
             </router-link>
             <span>{{ position }}</span>
         </div>
@@ -22,6 +22,9 @@ export default {
             type: String,
         },
         name: {
+            type: String,
+        },
+        url: {
             type: String,
         },
         position: {

@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 gap-x-4">
                 <div class="text-white">
-                    <main-heading title="The Byte: Your Weekly Dose of Software Development News and Insights." type="h2" />
+                    <main-heading title="The Byte: Your Weekly Dose of Software Development News and Insights." tag="h2" />
                 </div>
                 <div class="mt-10">
                     <form action="#" class="text-end relative">

@@ -4,7 +4,7 @@
             <div class="bg-white p-10 rounded shadow-2xl border border-gray-800 border-opacity-5">
                 <div class="grid grid-cols-3 gap-x-7">
                     <div class="col-span-2">
-                        <main-heading title="Get In Touch" type="h2" />
+                        <main-heading title="Get In Touch" tag="h2" />
                         <form @submit.prevent="handleSubmit" class="mt-5">
                             <div class="grid md:grid-cols-2 md:gap-6">
                                 <div class="relative z-0 w-full mb-6 group">

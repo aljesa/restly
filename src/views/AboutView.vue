@@ -14,7 +14,7 @@
                 </div>
                 <div class="pr-16">
                     <span class="text-blue-700 font-medium text-base mb-5 inline-block">It Support For Business</span>
-                    <main-heading title="Preparing for your success trusted source in IT services" type="h2" />
+                    <main-heading title="Preparing for your success trusted source in IT services" tag="h2" />
                     <div class="mt-10">
                         <main-paragraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore:
 

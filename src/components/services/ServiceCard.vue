@@ -7,11 +7,10 @@
             <div>
                 <span class="inline-block text-blue-600 text-sm">{{ category }}</span>
                 <router-link :to="url" v-if="title">
-                    <main-heading type="h3" :title="title" class="hover:text-blue-600 transition-colors" />
+                    <main-heading tag="h3" :title="title" class="hover:text-blue-600 transition-colors" />
                 </router-link>
             </div>
             <div>
-
             </div>
         </div>
     </div>

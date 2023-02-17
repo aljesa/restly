@@ -3,10 +3,10 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-10">
                 <span>Team Members</span>
-                <main-heading title="Our Awesome Team" type="h2" />
+                <main-heading title="Our Awesome Team" tag="h2" />
             </div>
             <div class="grid grid-cols-4 gap-x-4">
-                <team-member v-for="(member, index) in homeStore.teamMembers" :key="index" :image="member.image" :name="member.name" :position="member.position" />
+                <team-member v-for="(member, index) in homeStore.teamMembers" :key="index" :url="'/team/' + member.id" :image="member.image" :name="member.name" :position="member.position" />
             </div>
         </div>
     </section>

@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import ServiceDetailView from '../views/ServiceDetailView.vue'
+import TeamDetailView from '../views/TeamDetailView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +28,11 @@ const router = createRouter({
       path: '/services/:id',
       name: 'servicesSingle',
       component: ServiceDetailView
+    },
+    {
+      path: '/team/:id',
+      name: 'teamSingle',
+      component: TeamDetailView
     },
   
   ]

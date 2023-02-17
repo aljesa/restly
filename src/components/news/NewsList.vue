@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-10">
                 <span class="text-blue-700 font-medium text-base mb-5 inline-block">Recent Articles</span>
-                <main-heading title="Latest news" type="h2" />
+                <main-heading title="Latest news" tag="h2" />
             </div>
             <div class="grid grid-cols-3 gap-4">
                 <news-card v-for="(item, index) in newsStore.news" :key="index" :imageSrc="item.imgSrc" :title="item.title" :description="item.description" :user="item.user" :date="item.date" />
