@@ -23,6 +23,11 @@ export const useHeaderStore = defineStore('headerStore',{
             },
             {
                 id: 4,
+                title: 'News',
+                path: '/news'
+            },
+            {
+                id: 5,
                 title: 'Contact',
                 path: 'Contact'
             }

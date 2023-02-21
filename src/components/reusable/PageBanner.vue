@@ -4,6 +4,7 @@
             <div class="grid grid-cols-2">
                 <div>
                     <main-heading :title="title" tag="h1" />
+                    <!-- <span v-if="subTitle" class="inline-block text-white text-md">{{ subTitle }}</span> -->
                 </div>
             </div>
         </div>
@@ -22,6 +23,9 @@ export default {
             type: String,
         },
         title: {
+            type: String,
+        },
+        subTitle: {
             type: String,
         }
     }

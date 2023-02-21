@@ -4,7 +4,7 @@
         <div class="grid grid-cols-3 gap-10">
             <div>
                 <figure class="">
-                    <img :src="'../' + team.image" alt="" class="rounded">
+                    <img v-lazy="'../' + team.image" alt="" class="rounded">
                 </figure>
             </div>
             <div class="col-span-2">
@@ -55,4 +55,5 @@ export default {
         }
     }
 
-}</script>
+}
+</script>

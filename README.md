@@ -1,6 +1,6 @@
 # restly
 
-Software Company using Vue.js 3, Tailwind CSS and Pinia (State Management)
+In this project I'm using Vue.js 3, Tailwind CSS and Pinia for State Management.
 
 ## Project Setup
 

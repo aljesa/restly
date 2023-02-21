@@ -10,7 +10,6 @@
             </div>
             <div class="text-center mt-10">
                 <main-button title="View More" link="/news" />
-
             </div>
         </div>
     </section>
