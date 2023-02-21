@@ -5,7 +5,6 @@
   <main-header />
   <RouterView />
   <main-footer />
-
 </template>
 <script>
 import MainHeader from './components/layout/MainHeader.vue';

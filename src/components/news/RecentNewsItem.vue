@@ -1,11 +1,14 @@
 <template>
-    <div class="flex">
-        <div>
-            <img :src="imgSrc" :alt="title">
+    <div class="flex mt-5">
+        <div class="mr-5">
+            <figure class="w-20 h-20 rounded">
+                <img :src="imgSrc" :alt="title" class="w-full h-full object-cover rounded-full">
+            </figure>
+
         </div>
         <div>
-            <a :href="link">{{ title }}</a>
-            <span>{{ postDate }}</span>
+            <router-link :to="link" class="font-bold inline-block hover:text-blue-700 cursor-pointer">{{ title }}</router-link>
+            <span class="text-gray-400 text-sm">{{ postDate }}</span>
         </div>
 
     </div>
