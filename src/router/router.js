@@ -5,6 +5,7 @@ import ServicesView from '../views/ServicesView.vue'
 import ServiceDetailView from '../views/ServiceDetailView.vue'
 import TeamDetailView from '../views/TeamDetailView.vue'
 import NewsView from '../views/NewsView.vue'
+import PageNotFound from '../components/errors/PageNotFound.vue'
 
 
 const router = createRouter({
@@ -39,6 +40,15 @@ const router = createRouter({
       path: '/news',
       name: 'news',
       component: NewsView
+    },
+    {
+      path: '/404',
+      name: 'PageNotFound',
+      component: PageNotFound
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/404'
     }
   
   ]

@@ -8,7 +8,7 @@
                 <div class="mt-10">
                     <form action="#" class="text-end relative">
                         <input type="email" placeholder="Your Email Address" class="text-white p-3 rounded-l text-sm placeholder-white placeholder-opacity-20 outline-none bg-transparent border border-white border-opacity-20">
-                        <main-button title="Subscribe" class="bg-white py-3 text-blue-800 font-bold  mb-0 mt-0 rounded-l-none hover:bg-white" />
+                        <main-button title="Subscribe" class="bg-white py-3 font-bold  mb-0 mt-0 rounded-l-none hover:bg-white text-blue-800" />
                     </form>
                 </div>
             </div>

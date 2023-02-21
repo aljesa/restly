@@ -33,5 +33,11 @@ export const useHeaderStore = defineStore('headerStore',{
             }
         ],
         isScrolled: false,
-    })
+    }),
+    actions: {
+
+    handle404() {
+      this.$router.push({ name: 'PageNotFound' })
+    },
+  },
 });
