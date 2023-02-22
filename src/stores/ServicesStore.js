@@ -1,19 +1,19 @@
-import { defineStore } from 'pinia';
+import {
+    defineStore
+} from 'pinia';
 
-export const useServicesStore = defineStore('servicesStore',{
+export const useServicesStore = defineStore('servicesStore', {
     state: () => ({
-        services:{
-            items:[
-                {
-                    id:1,
-                    title:'IT Management',
-                    imgSrc:'src/assets/images/services/web-dev.jpeg',
-                    category:'Web Development',
-                    icon:'',
-                    url:'',
+        services: {
+            items: [{
+                    id: 1,
+                    title: 'IT Management',
+                    imgSrc: 'src/assets/images/services/web-dev.jpeg',
+                    category: 'Web Development',
+                    icon: '',
+                    url: '',
                     description: 'Welcome to our IT Management Services! We understand that managing an IT department can be a daunting task, especially for small to medium-sized businesses that don\'t have the resources to hire a full-time IT staff. That\'s where we come in. Our IT Management Services are designed to help you focus on your core business while we take care of your IT needs. <br><br> Our team of experienced IT professionals is dedicated to providing top-notch management services that ensure your technology infrastructure is running smoothly and efficiently. We offer a range of IT management services, including:',
-                    subServices: [
-                        {
+                    subServices: [{
                             id: 1,
                             title: 'Network and Systems Management',
                             description: 'We will help you manage your network and systems to ensure that they are running at peak performance. Our team will monitor your systems and provide support to keep them up and running.',
@@ -41,15 +41,14 @@ export const useServicesStore = defineStore('servicesStore',{
                     ]
                 },
                 {
-                    id:2,
-                    title:'Cloud Services',
-                    imgSrc:'src/assets/images/services/data-analytics.jpeg',
-                    category:'Data Analytics',
-                    icon:'',
-                    url:'',
+                    id: 2,
+                    title: 'Cloud Services',
+                    imgSrc: 'src/assets/images/services/data-analytics.jpeg',
+                    category: 'Data Analytics',
+                    icon: '',
+                    url: '',
                     description: 'Welcome to our Cloud Services! We understand that in today\'s fast-paced digital world, businesses need reliable and flexible technology solutions that can adapt to their changing needs. Our Cloud Services are designed to help you achieve just that. Our cloud services are backed by industry-leading technology and infrastructure, providing you with the scalability, flexibility, and security that you need to grow your business.',
-                    subServices: [
-                        {
+                    subServices: [{
                             id: 1,
                             title: 'Cloud Infrastructure',
                             description: 'Our Cloud Infrastructure services provide businesses with the ability to rapidly provision and scale their computing resources, including storage, processing power, and memory, to meet their specific needs. We can help you migrate your existing workloads to the cloud, and provide you with the support you need to manage your cloud infrastructure effectively.',
@@ -69,19 +68,18 @@ export const useServicesStore = defineStore('servicesStore',{
                             title: 'Cloud Security',
                             description: 'Our Cloud Security services provide businesses with the peace of mind that their data is protected from cyber threats and other security risks. We use industry-leading security technologies and protocols to ensure the confidentiality, integrity, and availability of your data.',
                         },
-                        
-                    ]                
+
+                    ]
                 },
                 {
-                    id:3,
-                    title:'Machine Learning',
-                    imgSrc:'src/assets/images/services/mobile-developers.jpeg',
-                    category:'Mobile Development',
-                    icon:'',
-                    url:'',
+                    id: 3,
+                    title: 'Machine Learning',
+                    imgSrc: 'src/assets/images/services/mobile-developers.jpeg',
+                    category: 'Mobile Development',
+                    icon: '',
+                    url: '',
                     description: 'Welcome to our Machine Learning services page! Machine Learning is a powerful technology that enables computers to learn from data and improve their performance on a task without being explicitly programmed. At Restly, we offer Machine Learning services to help businesses leverage the power of this technology to gain insights, optimize processes, and drive innovation.',
-                    subServices: [
-                        {
+                    subServices: [{
                             id: 1,
                             title: 'Predictive Analytics',
                             description: 'Our predictive analytics solutions use machine learning algorithms to identify patterns and make predictions about future events based on historical data. We can help you develop predictive models for a range of applications, including customer segmentation, fraud detection, and demand forecasting.',
@@ -104,29 +102,28 @@ export const useServicesStore = defineStore('servicesStore',{
                     ]
                 }
             ],
-            categories:[
-                {
-                    id:1,
-                    title:'Data Center'
+            categories: [{
+                    id: 1,
+                    title: 'Data Center'
                 },
                 {
-                    id:2,
-                    title:'IT Management'
+                    id: 2,
+                    title: 'IT Management'
                 },
                 {
-                    id:3,
-                    title:'Software Development'
+                    id: 3,
+                    title: 'Software Development'
                 },
                 {
-                    id:4,
-                    title:'Web Development'
+                    id: 4,
+                    title: 'Web Development'
                 },
                 {
-                    id:5,
-                    title:'Cloud Services'
+                    id: 5,
+                    title: 'Cloud Services'
                 }
             ]
-}
-        
+        }
+
     })
 });

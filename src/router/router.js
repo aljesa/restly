@@ -5,6 +5,7 @@ import ServicesView from '../views/ServicesView.vue'
 import ServiceDetailView from '../views/ServiceDetailView.vue'
 import TeamDetailView from '../views/TeamDetailView.vue'
 import NewsView from '../views/NewsView.vue'
+import NewsDetailView from '../views/NewsDetailView.vue'
 import PageNotFound from '../components/errors/PageNotFound.vue'
 
 
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/news',
       name: 'news',
       component: NewsView
+    },
+     {
+      path: '/news/:id',
+      name: 'newsSingle',
+      component: NewsDetailView
     },
     {
       path: '/404',
