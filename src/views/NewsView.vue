@@ -4,7 +4,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-3 gap-x-4">
                 <div class="col-span-2">
-                    <news-card class="mb-5 shadow-none border border-gray-400" v-for="(item, index) in newsStore.news.items" :key="index" :imageSrc="item.imgSrc" :title="item.title" :description="item.description" :user="item.user" :date="item.date" />
+                    <news-card class="mb-5 shadow-none border border-gray-400" v-for="(item, index) in newsStore.news.items" :key="index" :link="'/news/' + item.id" :imageSrc="item.imgSrc" :title="item.title" :description="item.description" :user="item.user" :date="item.date" />
                 </div>
                 <div class="">
                     <recent-news-card title="Recent News" />

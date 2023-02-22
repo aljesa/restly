@@ -6,7 +6,7 @@
                 <main-heading title="Latest news" tag="h2" />
             </div>
             <div class="grid grid-cols-3 gap-4">
-                <news-card v-for="(item, index) in newsStore.news.items" :key="index" :imageSrc="item.imgSrc" :title="item.title" :description="item.description" :user="item.user" :date="item.date" />
+                <news-card v-for="(item, index) in newsStore.news.items" :key="index" :link="'/news/' + item.id" :imageSrc="item.imgSrc" :title="item.title" :description="item.description" :user="item.user" :date="item.date" />
             </div>
             <div class="text-center mt-10">
                 <main-button title="View More" link="/news" />
